@@ -10,7 +10,7 @@
   "scripts": {
     "build": "lerna run build --scope @nest-pkgs/* --stream",
     "watch": "yarn build && lerna run watch --scope @nest-pkgs/* --parallel",
-    "publish": "lerna publish from-package"
+    "publish": "lerna publish"
   },
   "author": "Dondomie Dungca",
   "license": "ISC",
