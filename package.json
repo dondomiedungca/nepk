@@ -1,0 +1,28 @@
+{
+  "name": "nest-pkgs",
+  "version": "1.0.0",
+  "description": "NestJS packages for quick implementation of common app packages",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --scope @nest-pkgs/* --stream",
+    "watch": "yarn build && lerna run watch --scope @nest-pkgs/* --parallel"
+  },
+  "author": "Dondomie Dungca",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "lerna": "^7.3.0",
+    "rimraf": "^5.0.5"
+  }
+}
