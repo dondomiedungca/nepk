@@ -19,3 +19,24 @@ $ "migration:up": "nest build && cross-env DB_HOST=[your db host] DB_PORT=[your 
 # Execute the command
 $ npm run migration:up
 ```
+
+## Usage
+
+Just import the AuthModule and put the keypairs that will be use by the package to encrypt the user credentials
+
+**Recommended:** Use different keypair which isss only relevant for auth module
+
+```bash
+  import ...
+
+  @Module({
+    imports: [
+      AuthModule.register({
+        private_key: '',
+        public_key: '',
+      }),
+    ],
+    ...
+  })
+  export class AppModule {}
+```
