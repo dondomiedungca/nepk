@@ -9,6 +9,7 @@ $ npm install typeorm@^0.3.17 cross-env@^7.0.3
 ## Script
 
 **Required:** In order to initialize the tables when using Postgres version, add this script to your package.json and execute the command.
+
 **NOTE:** Do not include the script to repository (You can run it manually during deployment).
 
 ```bash
