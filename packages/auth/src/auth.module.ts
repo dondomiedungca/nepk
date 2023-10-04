@@ -7,11 +7,7 @@ export interface Options {
 }
 
 @Global()
-@Module({
-  imports: [],
-  providers: [AuthService],
-  exports: [AuthService],
-})
+@Module({})
 export class AuthModule {
   static register(options: Options): DynamicModule {
     return {
