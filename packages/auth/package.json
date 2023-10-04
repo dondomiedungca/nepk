@@ -10,8 +10,7 @@
     "build": "yarn run compile && yarn run clean",
     "clean": "rimraf --glob ./tsconfig.tsbuildinfo",
     "compile": "yarn tsc -b tsconfig.json",
-    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean",
-    "migration:up": "yarn run compile && yarn run clean && typeorm -d dist/datasource.js migration:run"
+    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
