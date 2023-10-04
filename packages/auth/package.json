@@ -10,7 +10,8 @@
     "build": "yarn run compile && yarn run clean",
     "clean": "rimraf --glob ./tsconfig.tsbuildinfo",
     "compile": "yarn tsc -b tsconfig.json",
-    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean"
+    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean",
+    "publish:npm": "npm publish @nepk/auth --access=public"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
