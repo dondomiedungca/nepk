@@ -2,11 +2,8 @@ import { DynamicModule, Global, Module } from '@nestjs/common';
 import { AuthService } from './auth.service';
 
 export interface Options {
-  host: string;
-  username: string;
-  password: string;
-  port: number;
-  database: string;
+  private_key: string;
+  public_key: string;
 }
 
 @Global()
