@@ -1,8 +1,8 @@
 {
   "name": "@nepk/auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "General purpose for implementation of auth module.",
-  "author": "",
+  "author": "Dondomie Dungca",
   "license": "UNLICENSED",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",
@@ -10,8 +10,7 @@
     "build": "yarn run compile && yarn run clean",
     "clean": "rimraf --glob ./tsconfig.tsbuildinfo",
     "compile": "yarn tsc -b tsconfig.json",
-    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean",
-    "publish:npm": "npm publish @nepk/auth --access=public"
+    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
