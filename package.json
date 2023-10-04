@@ -1,6 +1,6 @@
 {
   "name": "nepk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS packages for quick implementation of common app packages",
   "main": "index.js",
   "workspaces": [
