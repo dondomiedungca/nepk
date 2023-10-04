@@ -10,14 +10,20 @@
     "build": "yarn run compile && yarn run clean",
     "clean": "rimraf --glob ./tsconfig.tsbuildinfo",
     "compile": "yarn tsc -b tsconfig.json",
-    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean"
+    "watch": "yarn run compile --watch --preserveWatchOutput && yarn run clean",
+    "migration:up": "yarn run compile && yarn run clean && typeorm -d dist/datasource.js migration:run"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
+    "@nestjs/mongoose": "^10.0.1",
     "@nestjs/platform-express": "^10.0.0",
+    "class-transformer": "^0.5.1",
+    "mongoose": "^7.5.3",
+    "pg": "^8.11.3",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.17"
   },
   "devDependencies": {
     "@types/node": "^20.3.1"
