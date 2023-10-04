@@ -4,7 +4,7 @@
   "description": "General purpose for implementation of auth module.",
   "author": "Dondomie Dungca",
   "license": "UNLICENSED",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "yarn run compile && yarn run clean",
