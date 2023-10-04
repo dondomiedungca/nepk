@@ -1,15 +1,14 @@
 {
-  "name": "nest-pkgs",
+  "name": "nepk",
   "version": "1.0.0",
   "description": "NestJS packages for quick implementation of common app packages",
   "main": "index.js",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna run build --scope @nest-pkgs/* --stream",
-    "watch": "yarn build && lerna run watch --scope @nest-pkgs/* --parallel",
+    "build": "lerna run build --scope @nepk/* --stream",
+    "watch": "yarn build && lerna run watch --scope @nepk/* --parallel",
     "publish": "lerna publish"
   },
   "author": "Dondomie Dungca",
